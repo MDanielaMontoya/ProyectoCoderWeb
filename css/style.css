@@ -7,6 +7,8 @@
 }
 html{
     font-size: 62.5%;
+    width: 100%;
+    height: 100%;
 }
 body {
     width: 100%;
@@ -16,10 +18,10 @@ body {
     background-color: whitesmoke;
 }
 
-
  /* BARRA DE NAVEGACION */
 
 header {
+    width: 100%;
     grid-column: 1/2;
     grid-row: 1/2;
 }
@@ -48,7 +50,6 @@ header nav ul li a{
 .navBarImg{
     width: 2.5rem;
     height: 2.5rem;
-    padding: 0.5rem;
     background-color: #F0997D;
     
 }
@@ -83,9 +84,10 @@ main{
 }
  /*BARRA DE BUSQUEDA */
 .searchBar{
+    width: auto;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: right;
     margin: 0.5rem;
 }
 .searchBarBox {
@@ -140,8 +142,6 @@ h2 {
     margin: 1rem;
     
 }
-
-
 
  /* IMAGENES PORTADA Y CUERPO PAGINA 1 */
 .imagenPortada {
