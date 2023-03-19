@@ -143,13 +143,20 @@ main{
 /* H1 Y H2*/
 h1 {
     text-align: center;
-    width: 100%;
+    width: 80%;
     font-size:2.5rem;
     background-color: #d9d9d9;
     color: #464E2E;
     padding:2rem;
     margin:3rem 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
+}
+.titulosSitio{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 }
 h2 {
     font-size:2rem; 
@@ -170,6 +177,7 @@ h2 {
     grid-template-rows: 1;
     margin: 1rem;
     border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .portada p{
     grid-column: 3/4;
@@ -204,25 +212,52 @@ h2 {
 /*PAGINA PRODUCTOS*/
 
 .imgProducto{
-    width: 60%;
+    width: 23rem;
+    height: 25rem;
     border: 1px solid black;
     border-radius: 2rem;
     margin: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .productTitle{
-    font-size:2rem;
+    font-size:1.8rem;
     background-color: #d7c9c9;
-    margin: 2rem;
-
+    margin: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .flexColumnProduct{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 3;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 1rem;
     text-align: center;
+    gap:3rem;
+}
+.gridProduct1{
+    grid-column:1/2 ;
+    grid-row:1/2 ;
+}
+.gridProduct2{
+    grid-column:2/3;
+    grid-row:1/2 ;
+}
+.gridProduct3{
+    grid-column:1/2;
+    grid-row: 2/3;
+}
+.gridProduct4{
+    grid-column:2/3 ;
+    grid-row:2/3 ;
+}
+.gridProduct5{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.gridProduct6{
+    grid-column:2/3 ;
+    grid-row:3/4 ;
 }
 
 /*BUYBUTTON*/
@@ -231,8 +266,15 @@ h2 {
     padding:0.5rem;
     border: 1px solid white;
     font-size: 1.5rem; 
-    color: black;
-    background-color: #F0997D;
+    color: white;
+    background-color: #464E2E;
+    border-radius: 0.5rem;
+    transition-duration: 0.3s;
+}
+
+.buyButton:hover{
+background-color: #F0997D;
+color: white;
 }
 /* PAGINA SOBRE NOSOTROS*/
 .ourTeam {
@@ -440,7 +482,7 @@ footer ul li a:hover{
     grid-row: 3/4;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 576px) {
+@media only screen and (min-width:0px) and (max-width: 576px) {
     .searchBar{
         flex-flow: column wrap;
         justify-content: center;
@@ -451,7 +493,6 @@ footer ul li a:hover{
         display: grid;
         grid-template-columns: 1;
         grid-template-rows: 2;
-
     }
     .portada p{
         grid-column: 1/2;
@@ -468,8 +509,13 @@ footer ul li a:hover{
         justify-content: center;
         align-items: center;
         width:60%;
-
     }
+    .flexColumnProduct{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;}
+    
     footer {
         flex-flow:column wrap;
         justify-content: center;
