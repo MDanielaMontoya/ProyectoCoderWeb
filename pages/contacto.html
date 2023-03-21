@@ -38,28 +38,36 @@
         <div class="consulta">
             <p>Si tenes alguna consulta, llena el formulario y nos pondremos en contacto con vos!</p>
         </div>
-        <div>
-            <form class="formGrid formBackground "action="" method="post">
-                <label for="E-mail"></label>
-                <input class="formGrid1" type="email" name="E-mail" placeholder="E-mail">
-                <label for="Nombre"></label>
-                <input class="formGrid2" type="text" name="Nombre" placeholder="Nombre">
-                <label for="Mensaje"></label>
-                <input class="formGrid3" type="text" name="text" placeholder="Escriba aqui su mensaje">
-                <label for="Enviar"></label>
-                <input class="formGrid4 volverTienda" type="submit" name="enviar" value="ENVIAR">
+        <div class="formGrid">
+            <form class="container text-center "action="" method="post">
+                <div class="column">
+                    <label for="E-mail"></label>
+                    <input class="col-4-sm col-8-md form1" type="email" name="E-mail" placeholder="E-mail">
+                    <label for="Nombre"></label>
+                    <input class="col-6-sm col-8-md form2" type="text" name="Nombre" placeholder="Nombre"> 
+                </div>       
+                <div class="row justify-content-center">
+                    <label for="Mensaje"></label>
+                    <input class="col-6 form1 form3" type="text" name="text" placeholder="Escriba aqui su mensaje">
+                </div>
+                <div class="row justify-content-center" >
+                    <label for="Enviar"></label>
+                    <input class="col-2 form4 volverTienda" type="submit" name="enviar" value="ENVIAR">
+                </div>     
             </form>
-        <div class="adress">
-            <p>Dirección: AV. PUBLICA 0- CORDOBA CAPITAL- CORDOBA.-</p>
-            <P>Lunes a Sábados de 9 a 18 hs.-</P>
         </div>
-        </div>
-        <div >
-            <form action="" method="post">
-                <label for="volver a la tienda"></label>
-                <a href="./productos.html"><input class="volverTienda" type="button" name="volver a la tienda" value="Volver a la tienda"></a>
-            </form>
+        <section class="container">
+            <div class="row justify-content-center adress">
+                <p class="col-5-sm col-8-md ">Dirección: AV. PUBLICA 0- CORDOBA CAPITAL- CORDOBA.-</p>
+                <P class="col-5-sm col-8-md ">Lunes a Sábados de 9 a 18 hs.-</P>
             </div>
+        </section>
+        <div class="container text-center">
+            <form class="row justify-content-center" action="" method="post">
+                <label for="volver a la tienda"></label>
+                <a class="col-2-sm col-4-md" href="./productos.html"><input class="volverTienda" type="button" name="volver a la tienda" value="Volver a la tienda"></a>
+            </form>
+        </div>
     </main>
     <footer>
         <div>

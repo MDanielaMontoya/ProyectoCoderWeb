@@ -53,9 +53,7 @@ header nav ul li a{
     width: 2.5rem;
     height: 2.5rem;
     padding: 0.3rem;
-    background-color: #F0997D;
-
-    
+    background-color: #F0997D;    
 }
 
 /*MAIN */
@@ -147,9 +145,9 @@ main{
 /* H1 Y H2*/
 h1 {
     text-align: center;
-    width: 80%;
+    width: 100%;
     font-size:2.5rem;
-    background-color: #d9d9d9;
+    background: linear-gradient(to right,#d9d9d9 ,whitesmoke);
     color: #464E2E;
     padding:2rem;
     margin:3rem 0;
@@ -178,6 +176,7 @@ h2 {
     display: grid;
     grid-template-columns: 3;
     grid-template-rows: 1;
+    margin:2rem;
     border: 1px solid rgba(0,0,0,0.175);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -307,51 +306,25 @@ border: 1px solid white;
     background-color:#464E2E;
     color:#d8cca3;   
 }
+
 .formGrid{
-    display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: 3;
-    justify-content: center;
-    align-items: center;
-    gap:1rem;
     padding: 3rem;
     background-color: #d8cca3;
     border:1px solid white;
 
 }
-.formGrid1{
-    grid-column:1/2 ;
-    grid-row: 1/2;
-    padding: 1rem;
+.form1, .form2, .form3 {
+    padding: 1.5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
 
-}
-.formGrid2{
-    grid-column:2/3 ;
-    grid-row: 1/2;
-    padding: 1rem;
+.form3{
+    padding: 3rem;
 
-}
-.formGrid3{
-    grid-column:1/3 ;
-    grid-row: 2/3;
-    padding: 1rem;
-}
-.formGrid4{
-    grid-column: 1/2;
-    grid-row: 3/4;
-    background-color: #F0997D;
-    border: 1px solid black;
-    padding: auto;
-    align-self: center;
-    
 }
 
 .adress{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: start;
-    align-items: start;
-    text-align:start;
     padding:1rem;
     margin:2rem;
     font-size: 2rem; 
@@ -498,11 +471,30 @@ footer ul li a:hover{
 }
 
 @media only screen and (min-width:0px) and (max-width: 576px) {
+    /*QUERIES BARRA DE NAVEGACION*/
+    header nav ul li { 
+        font-size: 1rem;  
+    } 
+    
+    header nav ul li a{        
+    font-size: 1rem;
+
+    }
+    .navBarImg{
+        width: 2rem;
+        height: 2rem;    
+    }
+
+    /*QUERIES BARRA DE BUSQUEDA*/
     .searchBar{
         flex-flow: column wrap;
         justify-content: center;
         align-items: center;
     }
+    .searchBarBox{
+        height: 2rem;
+    }
+    /*QUERIES PAGINA INICIO*/
     .portada{ 
         width: 70%;
         display: grid;
@@ -525,12 +517,14 @@ footer ul li a:hover{
         align-items: center;
         width:60%;
     }
+/*QUERIES PAGINA PRODUCTOS*/
     .flexColumnProduct{
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;}
-    
+
+/*QUERIES FOOTER*/
     footer {
         flex-flow:column wrap;
         justify-content: center;
@@ -544,5 +538,21 @@ footer ul li a:hover{
     }
     .footerGridSellos{
         width: 100%;    
+    }
+/*QUERIES PAGINA CONTACTO*/
+    .formGrid{
+        padding: 3rem;
+    
+    }
+    .form1, .form2, .form3 {
+        padding: 1rem;
+        margin: 0.5rem;
+        font-size: 1rem;
+    }
+    .form3{
+        padding: 2rem;
+    }
+    .form4{
+        font-size: 1rem;
     }
     }
