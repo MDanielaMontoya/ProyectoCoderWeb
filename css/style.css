@@ -128,7 +128,7 @@ main{
     margin: 0 2rem;
 }
 .searchBarBox {
-    border: 1px solid black;
+    border: 1px solid rgba(0,0,0,0.175);
     height: 3rem;
     width: 20rem;
     font-size: 1.5rem;
@@ -211,21 +211,6 @@ h2 {
 
 /*PAGINA PRODUCTOS*/
 
-.imgProducto{
-    width: 23rem;
-    height: 25rem;
-    border: 1px solid black;
-    border-radius: 2rem;
-    margin: 1rem;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    object-fit: cover;
-}
-.productTitle{
-    font-size:1.8rem;
-    background-color: #d7c9c9;
-    margin: 0.5rem;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
 
 .flexColumnProduct{
     display: grid;
