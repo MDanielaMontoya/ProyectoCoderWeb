@@ -1,0 +1,108 @@
+footer {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-color: #d8cca3;
+    padding: 2rem;
+    font-size:1.5rem;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
+    align-items:start;
+
+
+    div{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        color: #464E2E;
+    
+}
+        img {
+            width: 4rem;
+            height: 4rem;
+            padding: 1rem;
+    
+}
+        li{
+            list-style: none;
+            text-align: center;
+}
+            a{
+                text-decoration: none;
+                color: #464E2E;
+}
+            a:hover{
+                color: white;
+}
+}
+.flexFooterRow{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footerGridContact{
+    width: 25%;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footerGridC1{
+    grid-column: 1/2;
+    grid-row:1/2
+}
+.footerGridC2{
+    grid-column: 2/3;
+    grid-row:1/2;
+    
+}
+.footerGridC3{
+    grid-column: 1/2;
+    grid-row:2/3;
+}
+.footerGridC4{
+    grid-column: 2/3;
+    grid-row:2/3;
+}
+.footerGridSellos{
+    width: 25%;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 3;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    
+}
+.footerGrid1{
+    grid-column:1/2;
+    grid-row: 1/2;
+}
+.footerGrid2{
+    grid-column:2/3;
+    grid-row: 1/2;
+}
+.footerGrid3{
+    grid-column:1/2;
+    grid-row: 2/3;
+}
+.footerGrid4{
+    grid-column:2/3;
+    grid-row: 2/3;
+}
+.footerGrid5{
+    grid-column:1/2;
+    grid-row: 3/4;
+}
+.footerGrid6{
+    grid-column:2/3;
+    grid-row: 3/4;
+}
