@@ -1,0 +1,33 @@
+.flexColumnProduct{
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 2;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    gap:3rem;
+}
+.gridProduct1{
+    grid-column:1/2 ;
+    grid-row:1/2 ;
+}
+.gridProduct2{
+    grid-column:2/3;
+    grid-row:1/2 ;
+}
+.gridProduct3{
+    grid-column:3/4;
+    grid-row: 1/2;
+}
+.gridProduct4{
+    grid-column:1/2 ;
+    grid-row:2/3 ;
+}
+.gridProduct5{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.gridProduct6{
+    grid-column:3/4 ;
+    grid-row:2/3 ;
+}

@@ -1,0 +1,40 @@
+.consulta{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:1rem;
+    border: 1px solid white;
+    margin:2rem;
+    font-size: 2rem; 
+    background-color:#464E2E;
+    color:#d8cca3;   
+}
+
+.formGrid{
+    padding: 3rem;
+    background-color: #d8cca3;
+    border:1px solid white;
+
+}
+.form1, .form2, .form3 {
+    padding: 1.5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.form3{
+    padding: 3rem;
+
+}
+
+.adress{
+    padding:1rem;
+    margin:2rem;
+    font-size: 2rem; 
+    border:1px solid white;
+    background-color:#464E2E;
+    color:#d8cca3;
+    
+}

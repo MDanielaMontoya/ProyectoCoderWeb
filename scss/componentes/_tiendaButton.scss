@@ -1,0 +1,13 @@
+.volverTienda{
+    font-size:1.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: white;
+    border: 1px solid #F0997D;
+    border-radius: 0.5rem;
+    transition-duration: 0.3s;
+}
+.volverTienda:hover{
+    background-color: #F0997D;
+    color: white;
+}
