@@ -8,17 +8,27 @@
 @import "layout/mainCarrito";
 @import "componentes/buyButton";
 @import "componentes/tiendaButton";
+@import "layout/queries-max768";
+
+$primaryColor:#F0997D;
+$secondaryColor:#464E2E;
+$backgroundColor:whitesmoke;
+
+
+
+
 
 
 html {
     font-size: 62.5%;
     width: 100%;
     height: 100%;
+
 }
 body {
     width: 100%;
     display: grid;
     grid-template-columns: 1;
     grid-template-rows: 60px 95% 5%;
-    background-color: whitesmoke;
+    background-color: $backgroundColor;
 }

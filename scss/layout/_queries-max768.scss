@@ -1,0 +1,87 @@
+@media only screen and (min-width:0px) and (max-width: 576px) {
+    /*QUERIES BARRA DE NAVEGACION*/
+    header nav ul li { 
+        font-size: 1rem;  
+    } 
+    
+    header nav ul li a{        
+    font-size: 1rem;
+
+    }
+    .navBarImg{
+        width: 2rem;
+        height: 2rem;    
+    }
+
+    /*QUERIES BARRA DE BUSQUEDA*/
+    .searchBar{
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top:1rem;
+    }
+    .searchBarBox{
+        height: 2rem;
+    }
+    /*QUERIES PAGINA INICIO*/
+    .portada{ 
+        width: 70%;
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 2;
+    }
+    .portada p{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .imagenPortada {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .gridCabello, .gridPiel{
+        display: flex;
+        flex-flow:column wrap;
+        justify-content: center;
+        align-items: center;
+        width:60%;
+    }
+/*QUERIES PAGINA PRODUCTOS*/
+    .flexColumnProduct{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;}
+
+/*QUERIES FOOTER*/
+    footer {
+        flex-flow:column wrap;
+        justify-content: center;
+        align-items:center;
+    }
+    footer div{
+        flex-flow: column wrap;    
+    }
+    .footerGridContact{
+        width: 100%;
+    }
+    .footerGridSellos{
+        width: 100%;    
+    }
+/*QUERIES PAGINA CONTACTO*/
+    .formGrid{
+        padding: 3rem;
+    
+    }
+    .form1, .form2, .form3 {
+        padding: 1rem;
+        margin: 0.5rem;
+        font-size: 1rem;
+    }
+    .form3{
+        padding: 2rem;
+    }
+    .form4{
+        font-size: 1rem;
+    }
+    }
