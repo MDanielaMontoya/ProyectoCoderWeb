@@ -47,7 +47,6 @@ main {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 .flexCabelloPiel {
@@ -55,7 +54,6 @@ main {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  text-align: center;
   gap: 5rem;
   margin: 2rem;
 }
@@ -66,21 +64,21 @@ main {
   grid-template-rows: 1;
   width: 60%;
   border: 1px solid rgba(0, 0, 0, 0.175);
-  background-color: #d9d9d9;
+  background-color: whitesmoke;
   color: #464E2E;
 }
 
 .item1, .cabello {
   grid-column: 1/2;
   grid-row: 1/2;
-  background-color: #d9d9d9;
+  background-color: whitesmoke;
 }
 
 .cabello, .piel {
   justify-self: center;
   align-self: center;
   text-align: center;
-  background-color: #d9d9d9;
+  background-color: whitesmoke;
 }
 
 .item1, .item2 {
@@ -170,7 +168,6 @@ h2 {
   border: 1px solid rgba(0, 0, 0, 0.175);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 .portada p {
   grid-column: 3/4;
   grid-row: 1/2;
@@ -454,13 +451,13 @@ footer a:hover {
 
 @media only screen and (min-width: 0px) and (max-width: 576px) {
   /*QUERIES BARRA DE NAVEGACION*/
-  header nav ul li {
+  header li {
     font-size: 1rem;
   }
-  header nav ul li a {
+  header a {
     font-size: 1rem;
   }
-  .navBarImg {
+  header img {
     width: 2rem;
     height: 2rem;
   }

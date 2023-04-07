@@ -1,3 +1,9 @@
+$primaryColor:#F0997D;
+$secondaryColor:#464E2E;
+$backgroundColor:whitesmoke;
+$thirdColor:#d8cca3;
+$hooverColor:white;
+
 .estadoCarrito{
     display: flex;
     flex-flow: row wrap;
@@ -7,6 +13,6 @@
     padding:1rem;
     margin: 1rem;
     border:1px solid white;
-    background-color:#464E2E;
-    color:#d8cca3;
+    background-color:$secondaryColor;
+    color:$thirdColor;
 }

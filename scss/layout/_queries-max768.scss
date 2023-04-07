@@ -1,39 +1,47 @@
+@mixin centrado {
+    flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+}
+
+
 @media only screen and (min-width:0px) and (max-width: 576px) {
     /*QUERIES BARRA DE NAVEGACION*/
-    header nav ul li { 
-        font-size: 1rem;  
+    header {
+        li { 
+            font-size: 1rem;  
     } 
     
-    header nav ul li a{        
-    font-size: 1rem;
+            a{        
+                font-size: 1rem;
 
     }
-    .navBarImg{
-        width: 2rem;
-        height: 2rem;    
+            img{
+                width: 2rem;
+                height: 2rem;    
+    }
     }
 
     /*QUERIES BARRA DE BUSQUEDA*/
     .searchBar{
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
+        @include centrado;
         margin-top:1rem;
     }
     .searchBarBox{
         height: 2rem;
     }
     /*QUERIES PAGINA INICIO*/
-    .portada{ 
+    .portada{
         width: 70%;
         display: grid;
         grid-template-columns: 1;
         grid-template-rows: 2;
+
+            p{
+                grid-column: 1/2;
+                grid-row: 2/3;
     }
-    .portada p{
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
+}
     
     .imagenPortada {
         grid-column: 1/2;
@@ -41,27 +49,23 @@
     }
     .gridCabello, .gridPiel{
         display: flex;
-        flex-flow:column wrap;
-        justify-content: center;
-        align-items: center;
+        @include centrado;
         width:60%;
     }
 /*QUERIES PAGINA PRODUCTOS*/
     .flexColumnProduct{
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;}
+    @include centrado;
+}
 
 /*QUERIES FOOTER*/
     footer {
-        flex-flow:column wrap;
-        justify-content: center;
-        align-items:center;
-    }
-    footer div{
+        @include centrado;
+    
+            div{
         flex-flow: column wrap;    
     }
+}
     .footerGridContact{
         width: 100%;
     }

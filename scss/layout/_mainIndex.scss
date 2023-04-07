@@ -1,20 +1,27 @@
+$primaryColor:#F0997D;
+$secondaryColor:#464E2E;
+$backgroundColor:whitesmoke;
+$thirdColor:#d8cca3;
+$hooverColor:white;
+$secondaryBackgroundColor:#d9d9d9;
+
+@mixin centrado {
+    flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+}
+
 main{
     grid-column: 1/2;
     grid-row:2/3;
 }
 .flexMainColumn{
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    @include centrado;
 }
 .flexCabelloPiel{
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    @include centrado;
     gap: 5rem;
     margin: 2rem;
     
@@ -25,21 +32,21 @@ main{
     grid-template-rows: 1; 
     width:60%;
     border: 1px solid rgba(0,0,0,0.175);
-    background-color:#d9d9d9;
-    color: #464E2E;
+    background-color:$backgroundColor;
+    color: $secondaryColor;
 
 }
 
 .item1, .cabello {
     grid-column: 1/2;
     grid-row: 1/2;
-    background-color: #d9d9d9;
+    background-color: $backgroundColor;
 }
 .cabello,.piel{
     justify-self: center;
     align-self: center;
     text-align: center;
-    background-color: #d9d9d9;
+    background-color: $backgroundColor;
 
 }
 .item1,.item2 {
@@ -90,21 +97,19 @@ h1 {
     text-align: center;
     width: 100%;
     font-size:2.5rem;
-    background: linear-gradient(to right,#d9d9d9 ,whitesmoke);
-    color: #464E2E;
+    background: linear-gradient(to right,$secondaryBackgroundColor ,$backgroundColor);
+    color: $secondaryColor;
     padding:2rem;
     margin:3rem 0;
 
 }
 .titulosSitio{
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+    @include centrado;
 }
 h2 {
     font-size:2rem; 
-    color: #464E2E;
+    color: $secondaryColor;
     text-align: center;
     padding: 1rem;
 }
@@ -112,7 +117,7 @@ h2 {
     font-size: 2rem; 
     padding:2rem;
     list-style: none;
-    color: #464E2E;
+    color: $secondaryColor;
 } 
 .portada{ 
     width: 50%;
@@ -122,18 +127,18 @@ h2 {
     margin:2rem;
     border: 1px solid rgba(0,0,0,0.175);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-.portada p{
-    grid-column: 3/4;
-    grid-row: 1/2;
-    width: 100%;
-    background-color: #d9d9d9;
-    padding: 3rem;
-    font-size: 2rem;
-    color: #464E2E;
-    margin:0;
-    text-align: center;
 
+        p{
+            grid-column: 3/4;
+            grid-row: 1/2;
+            width: 100%;
+            background-color: $secondaryBackgroundColor;
+            padding: 3rem;
+            font-size: 2rem;
+            color: $secondaryColor;
+            margin:0;
+            text-align: center;
+}
 }
 /* IMAGENES PORTADA Y CUERPO PAGINA 1 */
 .imagenPortada {

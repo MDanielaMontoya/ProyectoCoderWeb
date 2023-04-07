@@ -1,3 +1,9 @@
+$primaryColor:#F0997D;
+$secondaryColor:#464E2E;
+$backgroundColor:whitesmoke;
+$thirdColor:#d8cca3;
+$hooverColor:white;
+
 header {
     width: 100%;
     grid-column: 1/2;
@@ -9,7 +15,7 @@ header {
         flex-flow: row wrap;
         justify-content: space-evenly;
         align-items: center;
-        background-color:#F0997D;
+        background-color:$primaryColor;
         list-style: none;
         text-decoration:none;
         color:white;
@@ -30,6 +36,6 @@ header {
     width: 2.5rem;
     height: 2.5rem;
     padding: 0.3rem;
-    background-color: #F0997D;    
+    background-color: $primaryColor;    
 }
 }

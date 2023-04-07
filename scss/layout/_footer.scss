@@ -1,7 +1,13 @@
+$primaryColor:#F0997D;
+$secondaryColor:#464E2E;
+$backgroundColor:whitesmoke;
+$thirdColor:#d8cca3;
+$hooverColor:white;
+
 footer {
     grid-column: 1/2;
     grid-row: 3/4;
-    background-color: #d8cca3;
+    background-color: $thirdColor;
     padding: 2rem;
     font-size:1.5rem;
     width: 100%;
@@ -17,7 +23,7 @@ footer {
         flex-flow: row wrap;
         justify-content: center;
         align-content: center;
-        color: #464E2E;
+        color: $secondaryColor;
     
 }
         img {
@@ -32,10 +38,10 @@ footer {
 }
             a{
                 text-decoration: none;
-                color: #464E2E;
+                color: $secondaryColor;
 }
             a:hover{
-                color: white;
+                color: $hooverColor;
 }
 }
 .flexFooterRow{

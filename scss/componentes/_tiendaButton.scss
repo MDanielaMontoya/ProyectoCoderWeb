@@ -1,13 +1,17 @@
+$primaryColor:#F0997D;
+$secondaryColor:#464E2E;
+$backgroundColor:whitesmoke;
+
 .volverTienda{
     font-size:1.5rem;
     padding: 1rem;
     margin: 1rem;
     background-color: white;
-    border: 1px solid #F0997D;
+    border: 1px solid $primaryColor;
     border-radius: 0.5rem;
     transition-duration: 0.3s;
 }
 .volverTienda:hover{
-    background-color: #F0997D;
+    background-color: $primaryColor;
     color: white;
 }

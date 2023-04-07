@@ -1,3 +1,9 @@
+$primaryColor:#F0997D;
+$secondaryColor:#464E2E;
+$backgroundColor:whitesmoke;
+$footerColor:#d8cca3;
+$hooverColor:white;
+
 .consulta{
     display: flex;
     flex-flow: row wrap;
@@ -8,13 +14,13 @@
     border: 1px solid white;
     margin:2rem;
     font-size: 2rem; 
-    background-color:#464E2E;
-    color:#d8cca3;   
+    background-color:$secondaryColor;
+    color:$thirdColor;   
 }
 
 .formGrid{
     padding: 3rem;
-    background-color: #d8cca3;
+    background-color: $thirdColor;
     border:1px solid white;
 
 }
@@ -34,7 +40,7 @@
     margin:2rem;
     font-size: 2rem; 
     border:1px solid white;
-    background-color:#464E2E;
-    color:#d8cca3;
+    background-color:$secondaryColor;
+    color:$thirdColor;
     
 }
