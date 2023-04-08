@@ -15,7 +15,8 @@ $hooverColor:white;
     margin:2rem;
     font-size: 2rem; 
     background-color:$secondaryColor;
-    color:$thirdColor;   
+    color:$thirdColor; 
+    border-radius: 0.4rem;
 }
 
 .formGrid{
@@ -42,5 +43,6 @@ $hooverColor:white;
     border:1px solid white;
     background-color:$secondaryColor;
     color:$thirdColor;
+    border-radius: 0.4rem;
     
 }
