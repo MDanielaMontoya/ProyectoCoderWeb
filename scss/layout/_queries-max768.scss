@@ -5,7 +5,7 @@
 }
 
 
-@media only screen and (min-width:0px) and (max-width: 576px) {
+@media only screen and (min-width:0px) and (max-width: 768px) {
     /*QUERIES BARRA DE NAVEGACION*/
     header {
         li { 
@@ -25,7 +25,7 @@
     /*QUERIES BARRA DE BUSQUEDA*/
     .searchBar{
         @include centrado;
-        margin-top:1rem;
+        margin-top: 15rem;
     }
     .searchBarBox{
         height: 2rem;
