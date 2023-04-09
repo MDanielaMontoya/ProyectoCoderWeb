@@ -1,3 +1,7 @@
+@import "utilities/functions";
+@import "utilities/mixins";
+@import "utilities/variables";
+
 .nav-wraper{
     width: 100%;
     margin: 0 auto;
@@ -22,15 +26,17 @@ nav .logonav{
     color: black;
 }
 
-.menu ul{
+.menu {
+    ul{
     list-style: none;
     display: flex;
     gap: 2rem;
 }
-.menu ul li a{
+            a{
     text-decoration: none;
     color: white;    
-}
+}}
+
 nav #toggle, nav label{
     display: none;
 }

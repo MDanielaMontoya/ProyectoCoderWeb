@@ -1,8 +1,6 @@
-$primaryColor:#F0997D;
-$secondaryColor:#464E2E;
-$backgroundColor:whitesmoke;
-$thirdColor:#d8cca3;
-$hooverColor:white;
+@import "utilities/functions";
+@import "utilities/mixins";
+@import "utilities/variables";
 
 footer {
     grid-column: 1/2;

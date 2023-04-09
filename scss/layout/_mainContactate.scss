@@ -1,8 +1,6 @@
-$primaryColor:#F0997D;
-$secondaryColor:#464E2E;
-$backgroundColor:whitesmoke;
-$footerColor:#d8cca3;
-$hooverColor:white;
+@import "utilities/functions";
+@import "utilities/mixins";
+@import "utilities/variables";
 
 .consulta{
     display: flex;
@@ -42,7 +40,5 @@ $hooverColor:white;
     font-size: 2rem; 
     border:1px solid white;
     background-color:$secondaryColor;
-    color:$thirdColor;
-    border-radius: 0.4rem;
-    
+    color:$thirdColor;    
 }

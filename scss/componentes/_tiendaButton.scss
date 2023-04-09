@@ -1,6 +1,6 @@
-$primaryColor:#F0997D;
-$secondaryColor:#464E2E;
-$backgroundColor:whitesmoke;
+@import "utilities/functions";
+@import "utilities/mixins";
+@import "utilities/variables";
 
 .volverTienda{
     font-size:1.5rem;

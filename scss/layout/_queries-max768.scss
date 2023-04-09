@@ -1,8 +1,6 @@
-@mixin centrado {
-    flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-}
+@import "utilities/functions";
+@import "utilities/mixins";
+@import "utilities/variables";
 
 
 @media only screen and (min-width:0px) and (max-width: 768px) {
