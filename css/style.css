@@ -83,7 +83,6 @@ main {
 
 .item1, .item2 {
   justify-self: center;
-  align-self: flex-start;
   padding: 3rem;
 }
 
@@ -108,7 +107,7 @@ main {
   display: flex;
   flex-flow: row wrap;
   justify-content: right;
-  margin: 4rem;
+  margin: 1rem;
 }
 
 .searchBarBox {
@@ -116,6 +115,7 @@ main {
   height: 3rem;
   width: 20rem;
   font-size: 1.5rem;
+  border-radius: 0.4rem;
 }
 
 /* LOGO*/
@@ -146,6 +146,7 @@ h1 {
 }
 
 h2 {
+  text-align: center;
   font-size: 2rem;
   color: #464E2E;
   text-align: center;
@@ -153,7 +154,7 @@ h2 {
 }
 
 .cabello, .piel {
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding: 2rem;
   list-style: none;
   color: #464E2E;
@@ -404,6 +405,7 @@ footer a:hover {
   border: 1px solid white;
   background-color: #464E2E;
   color: #d8cca3;
+  border-radius: 0.4rem;
 }
 
 .estadoCarrito {
@@ -417,6 +419,7 @@ footer a:hover {
   border: 1px solid white;
   background-color: #464E2E;
   color: #d8cca3;
+  border-radius: 0.4rem;
 }
 
 .buyButton {
@@ -453,6 +456,10 @@ footer a:hover {
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   /*QUERIES BARRA DE NAVEGACION*/
+  body {
+    display: grid;
+    grid-template-rows: 200px 95% 5%;
+  }
   header li {
     font-size: 1rem;
   }
@@ -468,7 +475,7 @@ footer a:hover {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 15rem;
+    margin-top: 1rem;
   }
   .searchBarBox {
     height: 2rem;
@@ -531,6 +538,11 @@ footer a:hover {
   }
   .form4 {
     font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .piel {
+    padding: 0rem;
   }
 }
 .nav-wraper {
@@ -601,7 +613,7 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: 1;
-  grid-template-rows: 60px 95% 5%;
+  grid-template-rows: 200px 95% 5%;
   background-color: whitesmoke;
 }
 

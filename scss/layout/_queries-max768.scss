@@ -12,7 +12,12 @@ $secondaryBackgroundColor:#d9d9d9;
 }
 @media only screen and (min-width:0px) and (max-width: 768px) {
     /*QUERIES BARRA DE NAVEGACION*/
-    header {
+    body {
+        display: grid;
+        grid-template-rows: 200px 95% 5%;
+    }
+
+    header { 
         li { 
             font-size: 1rem;  
     } 
@@ -30,7 +35,7 @@ $secondaryBackgroundColor:#d9d9d9;
     /*QUERIES BARRA DE BUSQUEDA*/
     .searchBar{
         @include centrado;
-        margin-top: 15rem;
+        margin-top: 1rem;
     }
     .searchBarBox{
         height: 2rem;
@@ -92,5 +97,10 @@ $secondaryBackgroundColor:#d9d9d9;
     }
     .form4{
         font-size: 1rem;
-    }
-    }
+    } 
+}
+
+    @media only screen and (min-width:768px) and (max-width: 1024px) {
+        .piel{
+            padding: 0rem;
+    } }
