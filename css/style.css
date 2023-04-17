@@ -367,6 +367,13 @@ footer a:hover {
   border-radius: 0.5rem;
 }
 
+.imgSobreNosotros {
+  width: 70%;
+  height: 30rem;
+  border-radius: 0.5rem;
+  object-fit: contain;
+}
+
 .consulta {
   display: flex;
   flex-flow: row wrap;
@@ -406,6 +413,13 @@ footer a:hover {
   background-color: #464E2E;
   color: #d8cca3;
   border-radius: 0.4rem;
+}
+
+.imgContacto {
+  width: 80%;
+  height: 15rem;
+  border-radius: 0.5rem;
+  object-fit: cover;
 }
 
 .estadoCarrito {
@@ -454,7 +468,7 @@ footer a:hover {
   color: white;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 768px) {
+@media only screen and (min-width: 0px) and (max-width: 425px) {
   /*QUERIES BARRA DE NAVEGACION*/
   body {
     display: grid;
@@ -500,7 +514,7 @@ footer a:hover {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 70%;
   }
   /*QUERIES PAGINA PRODUCTOS*/
   .flexColumnProduct {
@@ -563,7 +577,7 @@ nav {
 }
 
 nav .logonav {
-  font-weight: 500;
+  font-weight: 800;
   text-decoration: none;
   color: black;
 }
