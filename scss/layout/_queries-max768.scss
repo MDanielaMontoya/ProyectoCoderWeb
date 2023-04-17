@@ -10,7 +10,7 @@ $secondaryBackgroundColor:#d9d9d9;
         justify-content: center;
         align-items: center;
 }
-@media only screen and (min-width:0px) and (max-width: 768px) {
+@media only screen and (min-width:0px) and (max-width: 425px) {
     /*QUERIES BARRA DE NAVEGACION*/
     body {
         display: grid;
@@ -60,7 +60,7 @@ $secondaryBackgroundColor:#d9d9d9;
     .gridCabello, .gridPiel{
         display: flex;
         @include centrado;
-        width:60%;
+        width:70%;
     }
 /*QUERIES PAGINA PRODUCTOS*/
     .flexColumnProduct{
