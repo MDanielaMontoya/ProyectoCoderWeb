@@ -12,10 +12,6 @@ $secondaryBackgroundColor:#d9d9d9;
 }
 @media only screen and (min-width:0px) and (max-width: 425px) {
     /*QUERIES BARRA DE NAVEGACION*/
-    body {
-        display: grid;
-        grid-template-rows: 200px 95% 5%;
-    }
 
     header { 
         li { 

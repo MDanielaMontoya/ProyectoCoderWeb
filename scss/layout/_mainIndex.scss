@@ -1,160 +1,207 @@
-$primaryColor:#F0997D;
-$secondaryColor:#464E2E;
-$backgroundColor:whitesmoke;
-$thirdColor:#d8cca3;
-$hooverColor:white;
-$secondaryBackgroundColor:#d9d9d9;
+$primaryColor: #F0997D;
+$secondaryColor: #464E2E;
+$backgroundColor: whitesmoke;
+$thirdColor: #d8cca3;
+$hooverColor: white;
+$secondaryBackgroundColor: #d9d9d9;
 
 @mixin centrado {
     flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 
-main{
+main {
     grid-column: 1/2;
-    grid-row:2/3;
+    grid-row: 2/3;
 }
-.flexMainColumn{
+
+.flexMainColumn {
     display: flex;
     @include centrado;
 }
-.flexCabelloPiel{
+
+.flexCabelloPiel {
     display: flex;
     @include centrado;
     gap: 5rem;
     margin: 2rem;
-    
+
 }
-.gridCabello, .gridPiel{
+
+.gridCabello,
+.gridPiel {
     display: grid;
     grid-template-columns: 2;
-    grid-template-rows: 1; 
-    width:60%;
-    border: 1px solid rgba(0,0,0,0.175);
-    background-color:$backgroundColor;
+    grid-template-rows: 1;
+    width: 60%;
+    border: 1px solid rgba(0, 0, 0, 0.175);
+    background-color: $backgroundColor;
     color: $secondaryColor;
 
 }
 
-.item1, .cabello {
+.item1,
+.cabello {
     grid-column: 1/2;
     grid-row: 1/2;
     background-color: $backgroundColor;
 }
-.cabello,.piel{
+
+.cabello,
+.piel {
     justify-self: center;
     align-self: center;
     text-align: center;
     background-color: $backgroundColor;
 
 }
-.item1,.item2 {
-    justify-self:center;
+
+.item1,
+.item2 {
+    justify-self: center;
     padding: 3rem;
 }
-.imagen1{
+
+.imagen1 {
     grid-column: 2/3;
     grid-row: 1/2;
 }
 
-.item2, .piel {
+.item2,
+.piel {
     grid-column: 2/3;
     grid-row: 2/3;
 }
-.imagen2{
+
+.imagen2 {
     grid-column: 1/2;
     grid-row: 2/3;
 
 }
 
- /*BARRA DE BUSQUEDA */
-.searchBar{
+/*BARRA DE BUSQUEDA */
+.searchBar {
     width: auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: right;
     margin: 1rem;
 }
+
 .searchBarBox {
-    border: 1px solid rgba(0,0,0,0.175);
+    border: 1px solid rgba(0, 0, 0, 0.175);
     height: 3rem;
     width: 20rem;
     font-size: 1.5rem;
     border-radius: 0.4rem;
-    }
+}
 
 /* LOGO*/
 .logo {
-    width: 15rem;
-    height: 15rem;
-    margin: 2rem;
-    border-radius:10rem;
-    align-items:center;
+    width: 25rem;
+    height: 25rem;
+    margin: 4rem;
+    border-radius: 15rem;
+    align-items: center;
+
 }
+.scale-up-ver-center {
+	-webkit-animation: scale-up-ver-center 0.6s ;
+	animation: scale-up-ver-center 0.6s ;
+}
+@-webkit-keyframes scale-up-ver-center {
+    0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+    }
+    100% {
+    -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+    }
+}
+@keyframes scale-up-ver-center {
+    0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+    }
+    100% {
+    -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+    }
+} 
+
+
 /* H1 Y H2*/
 h1 {
     text-align: center;
     width: 100%;
-    font-size:2.5rem;
-    background: linear-gradient(to right,$secondaryBackgroundColor ,$backgroundColor);
+    font-size: 2.5rem;
+    background: linear-gradient(to right, $secondaryBackgroundColor , $backgroundColor);
     color: $secondaryColor;
-    padding:2rem;
-    margin:3rem 0;
+    padding: 2rem;
+    margin: 3rem 0;
 
 }
-.titulosSitio{
+
+.titulosSitio {
     display: flex;
     @include centrado;
 }
+
 h2 {
     text-align: center;
-    font-size:2rem; 
+    font-size: 2rem;
     color: $secondaryColor;
     text-align: center;
     padding: 1rem;
 }
-.cabello, .piel{
-    font-size: 1.8rem; 
-    padding:2rem;
+
+.cabello,
+.piel {
+    font-size: 1.8rem;
+    padding: 2rem;
     list-style: none;
     color: $secondaryColor;
-} 
-.portada{ 
-    width: 50%;
+}
+
+.portada {
+    width: 75%;
     display: grid;
     grid-template-columns: 3;
     grid-template-rows: 1;
-    margin:2rem;
-    border: 1px solid rgba(0,0,0,0.175);
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin: 2rem 4rem;
+    border: 1px solid rgba(0, 0, 0, 0.175);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-        p{
-            grid-column: 3/4;
-            grid-row: 1/2;
-            width: 100%;
-            background-color: $secondaryBackgroundColor;
-            padding: 3rem;
-            font-size: 2rem;
-            color: $secondaryColor;
-            margin:0;
-            text-align: center;
+    p {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        width: 100%;
+        background-color: $secondaryBackgroundColor;
+        padding: 3rem;
+        font-size: 3rem;
+        color: $secondaryColor;
+        margin: 0;
+        text-align: center;
+    }
 }
-}
+
 /* IMAGENES PORTADA Y CUERPO PAGINA 1 */
 .imagenPortada {
     grid-column: 1/3;
     grid-row: 1/2;
-    width:100%;
+    width: 100%;
     height: 23rem;
     object-fit: cover;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
-.imagen1, .imagen2 {
-    width:100%;
-    height:30rem; 
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+.imagen1,.imagen2 {
+    width: 100%;
+    height: 30rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     object-fit: cover;
 }
